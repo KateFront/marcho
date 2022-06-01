@@ -796,6 +796,7 @@
   }
 
   &__form-input {
+    margin-right: 120px;
     background-color: #ffffff;
     max-width: 320px;
     width: 100%;
@@ -809,6 +810,9 @@
     }
   }
 
+  &__form {
+    display: flex;
+  }
   &__form-btn {
     @extend %btn;
     border: none;
