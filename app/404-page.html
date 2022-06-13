@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gulp</title>
     <link rel="stylesheet" href="css/404-page.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -11,12 +13,15 @@
     <div class="container">
         <div class="header__inner">
             <a class="logo" href="#">
-                <img src="images/logo.png" alt="logo" class="logo_img">
+                <img src="../../images/logo.png" alt="logo" class="logo_img">
             </a>
             <nav class="menu">
+                <button class="menu__btn">
+                    <span></span>
+                </button>
                 <ul class="menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">HOME</a>
+                        <a class="menu__list-link menu__list-link--active" href="#">HOME</a>
                     </li>
                     <li class="menu__list-item">
                         <a class="menu__list-link" href="#">SHOP</a>
@@ -28,27 +33,26 @@
                         <a class="menu__list-link" href="#">BLOG</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__list-link menu__list-link--active" href="#">CONTACT</a>
+                        <a class="menu__list-link" href="#">CONTACT</a>
                     </li>
                 </ul>
             </nav>
             <div class="user-nav">
                 <a class="user-nav__link" href="#">
-                    <img src="images/icons/user.svg" alt="user icon" class="user-nav__link-img">
+                    <img src="../../images/icons/user.svg" alt="user icon" class="user-nav__link-img">
                 </a>
                 <a class="user-nav__link" href="#">
-                    <img src="images/icons/search.svg" alt="" class="search-nav__link-img">
+                    <img src="../../images/icons/search.svg" alt="" class="search-nav__link-img">
                 </a>
                 <a class="user-nav__link" href="#">
-                    <img src="images/icons/heart.svg" alt="" class="heart-nav__link-img">
+                    <img src="../../images/icons/heart.svg" alt="" class="heart-nav__link-img">
                     <span class="user-nav__num">3</span>
                 </a>
                 <a class="user-nav__link" href="#">
-                    <img src="images/icons/cart.svg" alt="" class="cart-nav__link-img">
+                    <img src="../../images/icons/cart.svg" alt="" class="cart-nav__link-img">
                     <span class="user-nav__num">7</span>
                 </a>
             </div>
-
         </div>
     </div>
 </header>
@@ -184,9 +188,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                 </p>
                 <form class="footer-top__form" action="#">
-                    <label>
-                        <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
-                    </label>
+                    <input class="footer-top__form-input" type="email" placeholder="Your email address" required>
                     <button class="footer-top__form-btn" type="submit">Subscribe</button>
                 </form>
             </div>
@@ -197,9 +199,9 @@
             </p>
             <div class="footer-bottom__accept">
                 We Accept
-                <img src="images/icons/mastercard.png" alt="we accept" class="footer-bottom__accept-img">
-                <img src="images/icons/visa.png" alt="we accept" class="footer-bottom__accept-img">
-                <img src="images/icons/paypal.png" alt="we accept" class="footer-bottom__accept-img">
+                <img src="../../images/icons/mastercard.png" alt="we accept" class="footer-bottom__accept-img">
+                <img src="../../images/icons/visa.png" alt="we accept" class="footer-bottom__accept-img">
+                <img src="../../images/icons/paypal.png" alt="we accept" class="footer-bottom__accept-img">
             </div>
         </div>
     </div>

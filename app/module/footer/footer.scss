@@ -7,6 +7,7 @@
   border-bottom: 1px solid #ececec;
   display: flex;
 
+
   &__contact {
     width: 250px;
     margin-right: 50px;
@@ -74,13 +75,12 @@
   }
 
   &__form-input {
-    margin-right: 120px;
     background-color: #ffffff;
     max-width: 320px;
     width: 100%;
     border: none;
     padding: 12px 10px 12px 15px;
-    box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
+    box-shadow: 0 7px 20px 0 rgba(192, 192, 192, 0.3);
 
     &::placeholder {
       color: $default;
@@ -99,14 +99,72 @@
 }
 
 .footer-bottom {
-  height: 75px;
+  min-height: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   &__accept-img {
     display: inline-block;
     margin-left: 25px;
     vertical-align: middle;
+  }
+}
+
+@media (max-width: 1050px){
+  .footer-top {
+    flex-wrap: wrap;
+    &__item-form{
+      max-width: 100%;
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  .footer-top {
+    flex-wrap: wrap;
+    &__contact{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 620px){
+  .footer-bottom{
+    justify-content: center;
+    text-align: center;
+    &__copy{
+      width: 100%;
+    }
+    &__accept-img{
+      margin-left: 15px;
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .footer-top{
+    &__nav{
+      margin-top: 30px;
+    }
+    &__form{
+      flex-wrap: wrap;
+    }
+    &__form-input{
+      max-width: 100%;
+      margin-right: 0;
+    }
+    &__form-btn{
+      width: 100%;
+    }
+  }
+  .footer-bottom{
+    &__accept-img{
+      margin-left: 15px;
+    }
   }
 }
