@@ -50,6 +50,7 @@ a {
   justify-content: center;
   padding-left: 25px;
   position: relative;
+  flex-wrap: wrap;
 
   &::before {
     content: '';
@@ -149,15 +150,15 @@ a {
   }
 }
 
-@media (max-width: 620px){
-  .title{
+@media (max-width: 620px) {
+  .title {
     font-size: 38px;
     line-height: 48px;
   }
 }
 
-@media (max-width: 375px){
-  .title{
+@media (max-width: 375px) {
+  .title {
     font-size: 32px;
     line-height: 42px;;
   }
